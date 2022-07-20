@@ -1,0 +1,17 @@
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.csproj.AssemblyReference.cache
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.GeneratedMSBuildEditorConfig.editorconfig
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.AssemblyInfoInputs.cache
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.AssemblyInfo.cs
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.csproj.CoreCompileInputs.cache
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\AlisaDependency.deps.json
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\AlisaDependency.dll
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\AlisaDependency.pdb
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\SlpzLibrary.dll
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\System.Reactive.dll
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\SlpzLibrary.pdb
+D:\vspjt\AlisaBot\AlisaDependency\bin\Debug\net6.0\System.Reactive.xml
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.csproj.CopyComplete
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.dll
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\refint\AlisaDependency.dll
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\AlisaDependency.pdb
+D:\vspjt\AlisaBot\AlisaDependency\obj\Debug\net6.0\ref\AlisaDependency.dll

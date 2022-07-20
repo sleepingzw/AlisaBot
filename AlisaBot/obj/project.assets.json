@@ -1,0 +1,558 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Flurl/3.0.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {}
+        }
+      },
+      "Flurl.Http/3.2.4": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "3.0.6",
+          "Newtonsoft.Json": "12.0.2",
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.Http.dll": {}
+        }
+      },
+      "Manganese/1.2.1": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "compile": {
+          "lib/net6.0/Manganese.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Manganese.dll": {}
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Mirai.Net/2.4.2": {
+        "type": "package",
+        "dependencies": {
+          "Flurl": "3.0.6",
+          "Flurl.Http": "3.2.4",
+          "Manganese": "1.2.1",
+          "Websocket.Client": "4.4.43"
+        },
+        "compile": {
+          "lib/net6.0/Mirai.Net.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Mirai.Net.dll": {}
+        }
+      },
+      "MySqlConnector/2.1.9": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {}
+        }
+      },
+      "Newtonsoft.Json/13.0.2-beta1": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "Spectre.Console/0.44.1-preview.0.17": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {}
+        }
+      },
+      "System.Reactive/4.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.0/System.Reactive.targets": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
+        }
+      },
+      "System.Threading.Channels/4.7.0": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/System.Threading.Channels.dll": {}
+        }
+      },
+      "Websocket.Client/4.4.43": {
+        "type": "package",
+        "dependencies": {
+          "System.Reactive": "4.3.2",
+          "System.Threading.Channels": "4.7.0"
+        },
+        "compile": {
+          "lib/net6.0/Websocket.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/Websocket.Client.dll": {}
+        }
+      },
+      "AlisaDependency/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Mirai.Net": "2.4.2",
+          "MySqlConnector": "2.1.9",
+          "Spectre.Console": "0.44.1-preview.0.17"
+        },
+        "compile": {
+          "bin/placeholder/AlisaDependency.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AlisaDependency.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Flurl/3.0.6": {
+      "sha512": "XMIlB/tJ4nTYF2+79xDsnnlgbXHpKyizKX2fffrECekI6pEsa9MSLzf5tPVMdLy4k4AcJPLs356Sa2Le5VRDCw==",
+      "type": "package",
+      "path": "flurl/3.0.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.3.0.6.nupkg.sha512",
+        "flurl.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.dll",
+        "lib/net461/Flurl.xml",
+        "lib/net472/Flurl.dll",
+        "lib/net472/Flurl.xml",
+        "lib/netstandard2.0/Flurl.dll",
+        "lib/netstandard2.0/Flurl.xml"
+      ]
+    },
+    "Flurl.Http/3.2.4": {
+      "sha512": "Me9Vm4Lm21vt/pbR0G2Dww/ZOjJgh6mB2FiH28aiUYStJD10ZecDp8jxg2zKxcy6lnkvLm99pjG4yC/k7a/d8w==",
+      "type": "package",
+      "path": "flurl.http/3.2.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "flurl.http.3.2.4.nupkg.sha512",
+        "flurl.http.nuspec",
+        "icon.png",
+        "lib/net461/Flurl.Http.dll",
+        "lib/net461/Flurl.Http.xml",
+        "lib/net472/Flurl.Http.dll",
+        "lib/net472/Flurl.Http.xml",
+        "lib/netstandard2.0/Flurl.Http.dll",
+        "lib/netstandard2.0/Flurl.Http.xml"
+      ]
+    },
+    "Manganese/1.2.1": {
+      "sha512": "ihTUlomK7w4QKSZEzR2OQU4Dv6CTgUU8yyoymiYCcQsNmy8xGkRiRjA0YMtnruJMa3fDMxa7+aZGBU1FjJKBnA==",
+      "type": "package",
+      "path": "manganese/1.2.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Manganese.dll",
+        "lib/net6.0/Manganese.xml",
+        "lib/netstandard2.0/Manganese.dll",
+        "lib/netstandard2.0/Manganese.xml",
+        "manganese.1.2.1.nupkg.sha512",
+        "manganese.nuspec"
+      ]
+    },
+    "Microsoft.NETCore.Platforms/2.1.2": {
+      "sha512": "mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
+      "type": "package",
+      "path": "microsoft.netcore.platforms/2.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard1.0/_._",
+        "microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+        "microsoft.netcore.platforms.nuspec",
+        "runtime.json",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Mirai.Net/2.4.2": {
+      "sha512": "B1uqC7DY/Jv1/a3KDfhAhcFDRjGh3l3/cSayOhyQfiap/eHR7penl4WqyKjk8jD3Tk76ZUjfE3td8JOE05vLVA==",
+      "type": "package",
+      "path": "mirai.net/2.4.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Mirai.Net.dll",
+        "lib/net6.0/Mirai.Net.xml",
+        "lib/netstandard2.0/Mirai.Net.dll",
+        "lib/netstandard2.0/Mirai.Net.xml",
+        "mirai.net.2.4.2.nupkg.sha512",
+        "mirai.net.nuspec"
+      ]
+    },
+    "MySqlConnector/2.1.9": {
+      "sha512": "72fgNLG3qVRaVkvjQOnY4jfbs7mukrMSWfu9b4l9LRwy5EKnPybRcDuaKtNI775c8FaeWgy/wEtV408opinAGQ==",
+      "type": "package",
+      "path": "mysqlconnector/2.1.9",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net45/MySqlConnector.dll",
+        "lib/net45/MySqlConnector.xml",
+        "lib/net461/MySqlConnector.dll",
+        "lib/net461/MySqlConnector.xml",
+        "lib/net471/MySqlConnector.dll",
+        "lib/net471/MySqlConnector.xml",
+        "lib/net5.0/MySqlConnector.dll",
+        "lib/net5.0/MySqlConnector.xml",
+        "lib/net6.0/MySqlConnector.dll",
+        "lib/net6.0/MySqlConnector.xml",
+        "lib/netcoreapp3.1/MySqlConnector.dll",
+        "lib/netcoreapp3.1/MySqlConnector.xml",
+        "lib/netstandard2.0/MySqlConnector.dll",
+        "lib/netstandard2.0/MySqlConnector.xml",
+        "lib/netstandard2.1/MySqlConnector.dll",
+        "lib/netstandard2.1/MySqlConnector.xml",
+        "logo.png",
+        "mysqlconnector.2.1.9.nupkg.sha512",
+        "mysqlconnector.nuspec"
+      ]
+    },
+    "Newtonsoft.Json/13.0.2-beta1": {
+      "sha512": "lrHT3bmqM13QHvgtj2Y30BCRsq6lX07klW5tScx2B7ihqWeG6aVXrHxVALN34+boed9ybVtlRFLOuKD44Xuttg==",
+      "type": "package",
+      "path": "newtonsoft.json/13.0.2-beta1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "README.md",
+        "lib/net20/Newtonsoft.Json.dll",
+        "lib/net20/Newtonsoft.Json.xml",
+        "lib/net35/Newtonsoft.Json.dll",
+        "lib/net35/Newtonsoft.Json.xml",
+        "lib/net40/Newtonsoft.Json.dll",
+        "lib/net40/Newtonsoft.Json.xml",
+        "lib/net45/Newtonsoft.Json.dll",
+        "lib/net45/Newtonsoft.Json.xml",
+        "lib/net6.0/Newtonsoft.Json.dll",
+        "lib/net6.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.0/Newtonsoft.Json.dll",
+        "lib/netstandard1.0/Newtonsoft.Json.xml",
+        "lib/netstandard1.3/Newtonsoft.Json.dll",
+        "lib/netstandard1.3/Newtonsoft.Json.xml",
+        "lib/netstandard2.0/Newtonsoft.Json.dll",
+        "lib/netstandard2.0/Newtonsoft.Json.xml",
+        "newtonsoft.json.13.0.2-beta1.nupkg.sha512",
+        "newtonsoft.json.nuspec",
+        "packageIcon.png"
+      ]
+    },
+    "Spectre.Console/0.44.1-preview.0.17": {
+      "sha512": "VZseg2MepxXzCj7A0btKkn/YKWJDecJ/c6D61pJ9Q1ejzQVtfmxt9JAesIoP0WY8NjanmiDxucHj5YawYq1sdw==",
+      "type": "package",
+      "path": "spectre.console/0.44.1-preview.0.17",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net5.0/Spectre.Console.dll",
+        "lib/net5.0/Spectre.Console.xml",
+        "lib/net6.0/Spectre.Console.dll",
+        "lib/net6.0/Spectre.Console.xml",
+        "lib/netstandard2.0/Spectre.Console.dll",
+        "lib/netstandard2.0/Spectre.Console.xml",
+        "small-logo.png",
+        "spectre.console.0.44.1-preview.0.17.nupkg.sha512",
+        "spectre.console.nuspec"
+      ]
+    },
+    "System.Reactive/4.3.2": {
+      "sha512": "WhGkScPWxw2pp7UwRW8M1OvYZ3WUDPC2wJ0aiuaB4KRD3bt4wLkgHgYnOUu87WRhsurvv5LN0E63iWOEza2o8g==",
+      "type": "package",
+      "path": "system.reactive/4.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netcoreapp3.0/System.Reactive.dll",
+        "build/netcoreapp3.0/System.Reactive.targets",
+        "build/netcoreapp3.0/System.Reactive.xml",
+        "buildTransitive/netcoreapp3.0/System.Reactive.targets",
+        "lib/net46/System.Reactive.dll",
+        "lib/net46/System.Reactive.xml",
+        "lib/netcoreapp3.0/_._",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.16299/System.Reactive.dll",
+        "lib/uap10.0.16299/System.Reactive.pri",
+        "lib/uap10.0.16299/System.Reactive.xml",
+        "lib/uap10.0/System.Reactive.dll",
+        "lib/uap10.0/System.Reactive.pri",
+        "lib/uap10.0/System.Reactive.xml",
+        "system.reactive.4.3.2.nupkg.sha512",
+        "system.reactive.nuspec"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "sha512": "wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "sha512": "4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "type": "package",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Text.Encoding.CodePages.dll",
+        "lib/net461/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/win/lib/net461/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netcoreapp2.0/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard1.3/System.Text.Encoding.CodePages.dll",
+        "runtimes/win/lib/netstandard2.0/System.Text.Encoding.CodePages.dll",
+        "system.text.encoding.codepages.4.5.1.nupkg.sha512",
+        "system.text.encoding.codepages.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Threading.Channels/4.7.0": {
+      "sha512": "gdOOXBhtt2UpTxYJm1DRmoqNfYg5ypvhzhVt0vxKhzxXFjS81r8yIOSFsJYLRa1Jc14GBAqCnjxJstO3zBN7gg==",
+      "type": "package",
+      "path": "system.threading.channels/4.7.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp3.0/System.Threading.Channels.dll",
+        "lib/netcoreapp3.0/System.Threading.Channels.xml",
+        "lib/netstandard1.3/System.Threading.Channels.dll",
+        "lib/netstandard1.3/System.Threading.Channels.xml",
+        "lib/netstandard2.0/System.Threading.Channels.dll",
+        "lib/netstandard2.0/System.Threading.Channels.xml",
+        "system.threading.channels.4.7.0.nupkg.sha512",
+        "system.threading.channels.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Websocket.Client/4.4.43": {
+      "sha512": "h0sS4zsnXrVkYyMYDaRc0k/oV54uXXBlN/HOHAK5d/RWleLTmWS6bxtt0l3D5Q2rgtfLinkHLdf4sOqdrxZ0NA==",
+      "type": "package",
+      "path": "websocket.client/4.4.43",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/net5.0/Websocket.Client.dll",
+        "lib/net5.0/Websocket.Client.xml",
+        "lib/net6.0/Websocket.Client.dll",
+        "lib/net6.0/Websocket.Client.xml",
+        "lib/netstandard2.0/Websocket.Client.dll",
+        "lib/netstandard2.0/Websocket.Client.xml",
+        "lib/netstandard2.1/Websocket.Client.dll",
+        "lib/netstandard2.1/Websocket.Client.xml",
+        "websocket.client.4.4.43.nupkg.sha512",
+        "websocket.client.nuspec"
+      ]
+    },
+    "AlisaDependency/1.0.0": {
+      "type": "project",
+      "path": "../AlisaDependency/AlisaDependency.csproj",
+      "msbuildProject": "../AlisaDependency/AlisaDependency.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "AlisaDependency >= 1.0.0",
+      "Mirai.Net >= 2.4.2",
+      "MySqlConnector >= 2.1.9",
+      "Newtonsoft.Json >= 13.0.2-beta1",
+      "Spectre.Console >= 0.44.1-preview.0.17"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\wangz\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\vspjt\\AlisaBot\\AlisaBot\\AlisaBot.csproj",
+      "projectName": "AlisaBot",
+      "projectPath": "D:\\vspjt\\AlisaBot\\AlisaBot\\AlisaBot.csproj",
+      "packagesPath": "C:\\Users\\wangz\\.nuget\\packages\\",
+      "outputPath": "D:\\vspjt\\AlisaBot\\AlisaBot\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\wangz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\vspjt\\AlisaBot\\AlisaDependency\\AlisaDependency.csproj": {
+              "projectPath": "D:\\vspjt\\AlisaBot\\AlisaDependency\\AlisaDependency.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Mirai.Net": {
+            "target": "Package",
+            "version": "[2.4.2, )"
+          },
+          "MySqlConnector": {
+            "target": "Package",
+            "version": "[2.1.9, )"
+          },
+          "Newtonsoft.Json": {
+            "target": "Package",
+            "version": "[13.0.2-beta1, )"
+          },
+          "Spectre.Console": {
+            "target": "Package",
+            "version": "[0.44.1-preview.0.17, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

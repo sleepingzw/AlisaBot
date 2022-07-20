@@ -1,0 +1,239 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "AlisaDependency/1.0.0": {
+        "dependencies": {
+          "Mirai.Net": "2.4.2",
+          "MySqlConnector": "2.1.9",
+          "Spectre.Console": "0.44.1-preview.0.17",
+          "SlpzLibrary": "1.0.0.0",
+          "System.Reactive.Reference": "4.3.0.0"
+        },
+        "runtime": {
+          "AlisaDependency.dll": {}
+        }
+      },
+      "Flurl/3.0.6": {
+        "runtime": {
+          "lib/netstandard2.0/Flurl.dll": {
+            "assemblyVersion": "3.0.6.0",
+            "fileVersion": "3.0.6.0"
+          }
+        }
+      },
+      "Flurl.Http/3.2.4": {
+        "dependencies": {
+          "Flurl": "3.0.6",
+          "Newtonsoft.Json": "13.0.1",
+          "System.Text.Encoding.CodePages": "4.5.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Flurl.Http.dll": {
+            "assemblyVersion": "3.2.4.0",
+            "fileVersion": "3.2.4.0"
+          }
+        }
+      },
+      "Manganese/1.2.1": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Manganese.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "Microsoft.NETCore.Platforms/2.1.2": {},
+      "Mirai.Net/2.4.2": {
+        "dependencies": {
+          "Flurl": "3.0.6",
+          "Flurl.Http": "3.2.4",
+          "Manganese": "1.2.1",
+          "Websocket.Client": "4.4.43"
+        },
+        "runtime": {
+          "lib/net6.0/Mirai.Net.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "MySqlConnector/2.1.9": {
+        "runtime": {
+          "lib/net6.0/MySqlConnector.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.1.9.0"
+          }
+        }
+      },
+      "Newtonsoft.Json/13.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "assemblyVersion": "13.0.0.0",
+            "fileVersion": "13.0.1.25517"
+          }
+        }
+      },
+      "Spectre.Console/0.44.1-preview.0.17": {
+        "runtime": {
+          "lib/net6.0/Spectre.Console.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.44.1.0"
+          }
+        }
+      },
+      "System.Reactive/4.3.2": {},
+      "System.Runtime.CompilerServices.Unsafe/4.5.2": {},
+      "System.Text.Encoding.CodePages/4.5.1": {
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "2.1.2",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.2"
+        }
+      },
+      "System.Threading.Channels/4.7.0": {},
+      "Websocket.Client/4.4.43": {
+        "dependencies": {
+          "System.Reactive": "4.3.2",
+          "System.Threading.Channels": "4.7.0"
+        },
+        "runtime": {
+          "lib/net6.0/Websocket.Client.dll": {
+            "assemblyVersion": "4.4.0.0",
+            "fileVersion": "4.4.0.0"
+          }
+        }
+      },
+      "SlpzLibrary/1.0.0.0": {
+        "runtime": {
+          "SlpzLibrary.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "System.Reactive.Reference/4.3.0.0": {
+        "runtime": {
+          "System.Reactive.dll": {
+            "assemblyVersion": "4.3.0.0",
+            "fileVersion": "4.3.2.55399"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AlisaDependency/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Flurl/3.0.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XMIlB/tJ4nTYF2+79xDsnnlgbXHpKyizKX2fffrECekI6pEsa9MSLzf5tPVMdLy4k4AcJPLs356Sa2Le5VRDCw==",
+      "path": "flurl/3.0.6",
+      "hashPath": "flurl.3.0.6.nupkg.sha512"
+    },
+    "Flurl.Http/3.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Me9Vm4Lm21vt/pbR0G2Dww/ZOjJgh6mB2FiH28aiUYStJD10ZecDp8jxg2zKxcy6lnkvLm99pjG4yC/k7a/d8w==",
+      "path": "flurl.http/3.2.4",
+      "hashPath": "flurl.http.3.2.4.nupkg.sha512"
+    },
+    "Manganese/1.2.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ihTUlomK7w4QKSZEzR2OQU4Dv6CTgUU8yyoymiYCcQsNmy8xGkRiRjA0YMtnruJMa3fDMxa7+aZGBU1FjJKBnA==",
+      "path": "manganese/1.2.1",
+      "hashPath": "manganese.1.2.1.nupkg.sha512"
+    },
+    "Microsoft.NETCore.Platforms/2.1.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mOJy3M0UN+LUG21dLGMxaWZEP6xYpQEpLuvuEQBaownaX4YuhH6NmNUlN9si+vNkAS6dwJ//N1O4DmLf2CikVg==",
+      "path": "microsoft.netcore.platforms/2.1.2",
+      "hashPath": "microsoft.netcore.platforms.2.1.2.nupkg.sha512"
+    },
+    "Mirai.Net/2.4.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B1uqC7DY/Jv1/a3KDfhAhcFDRjGh3l3/cSayOhyQfiap/eHR7penl4WqyKjk8jD3Tk76ZUjfE3td8JOE05vLVA==",
+      "path": "mirai.net/2.4.2",
+      "hashPath": "mirai.net.2.4.2.nupkg.sha512"
+    },
+    "MySqlConnector/2.1.9": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-72fgNLG3qVRaVkvjQOnY4jfbs7mukrMSWfu9b4l9LRwy5EKnPybRcDuaKtNI775c8FaeWgy/wEtV408opinAGQ==",
+      "path": "mysqlconnector/2.1.9",
+      "hashPath": "mysqlconnector.2.1.9.nupkg.sha512"
+    },
+    "Newtonsoft.Json/13.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
+      "path": "newtonsoft.json/13.0.1",
+      "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Spectre.Console/0.44.1-preview.0.17": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-VZseg2MepxXzCj7A0btKkn/YKWJDecJ/c6D61pJ9Q1ejzQVtfmxt9JAesIoP0WY8NjanmiDxucHj5YawYq1sdw==",
+      "path": "spectre.console/0.44.1-preview.0.17",
+      "hashPath": "spectre.console.0.44.1-preview.0.17.nupkg.sha512"
+    },
+    "System.Reactive/4.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-WhGkScPWxw2pp7UwRW8M1OvYZ3WUDPC2wJ0aiuaB4KRD3bt4wLkgHgYnOUu87WRhsurvv5LN0E63iWOEza2o8g==",
+      "path": "system.reactive/4.3.2",
+      "hashPath": "system.reactive.4.3.2.nupkg.sha512"
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wprSFgext8cwqymChhrBLu62LMg/1u92bU+VOwyfBimSPVFXtsNqEWC92Pf9ofzJFlk4IHmJA75EDJn1b2goAQ==",
+      "path": "system.runtime.compilerservices.unsafe/4.5.2",
+      "hashPath": "system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512"
+    },
+    "System.Text.Encoding.CodePages/4.5.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4J2JQXbftjPMppIHJ7IC+VXQ9XfEagN92vZZNoG12i+zReYlim5dMoXFC1Zzg7tsnKDM7JPo5bYfFK4Jheq44w==",
+      "path": "system.text.encoding.codepages/4.5.1",
+      "hashPath": "system.text.encoding.codepages.4.5.1.nupkg.sha512"
+    },
+    "System.Threading.Channels/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gdOOXBhtt2UpTxYJm1DRmoqNfYg5ypvhzhVt0vxKhzxXFjS81r8yIOSFsJYLRa1Jc14GBAqCnjxJstO3zBN7gg==",
+      "path": "system.threading.channels/4.7.0",
+      "hashPath": "system.threading.channels.4.7.0.nupkg.sha512"
+    },
+    "Websocket.Client/4.4.43": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h0sS4zsnXrVkYyMYDaRc0k/oV54uXXBlN/HOHAK5d/RWleLTmWS6bxtt0l3D5Q2rgtfLinkHLdf4sOqdrxZ0NA==",
+      "path": "websocket.client/4.4.43",
+      "hashPath": "websocket.client.4.4.43.nupkg.sha512"
+    },
+    "SlpzLibrary/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Reactive.Reference/4.3.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
