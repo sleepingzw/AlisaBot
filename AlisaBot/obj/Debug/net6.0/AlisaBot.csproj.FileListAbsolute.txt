@@ -28,3 +28,8 @@ D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\Websocket.Client.dll
 D:\vspjt\AlisaBot\AlisaBot\obj\Debug\net6.0\AlisaBot.genruntimeconfig.cache
 D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\AlisaDependency.dll
 D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\AlisaDependency.pdb
+D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\SkiaSharp.dll
+D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\runtimes\osx\native\libSkiaSharp.dylib
+D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\runtimes\win-arm64\native\libSkiaSharp.dll
+D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\runtimes\win-x64\native\libSkiaSharp.dll
+D:\vspjt\AlisaBot\AlisaBot\bin\Debug\net6.0\runtimes\win-x86\native\libSkiaSharp.dll

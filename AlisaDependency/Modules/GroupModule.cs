@@ -31,7 +31,7 @@ namespace AlisaDependency.Modules
                         Logger.Log(tt, 0);
                     }
                     //最优先响应存放于字典中的跨事件交互
-                    if (receiverinfo.CanCommand && GlobalVariables.SvSearchEvents.ContainsKey($"{g.GroupId}-{g.Sender.Id}"))
+                    if (receiverinfo.CanCommand && GlobalVariables.svSearchEvents.ContainsKey($"{g.GroupId}-{g.Sender.Id}"))
                     {
                         foreach (var methodInfo in GetCommandHandlers())
                         {

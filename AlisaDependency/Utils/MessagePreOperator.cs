@@ -46,7 +46,10 @@ namespace AlisaDependency.Utils
                 {
                     foreach(var p in pl.Trim().Split(' '))
                     {
-                        stringlist.Add(p);
+                        if (p != " ")
+                        {
+                            stringlist.Add(p);
+                        }
                     }
                 }
                 return new ReceiverInfo(cancommand,

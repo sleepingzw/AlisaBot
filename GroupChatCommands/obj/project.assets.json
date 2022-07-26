@@ -46,7 +46,7 @@
           "lib/netstandard1.0/_._": {}
         }
       },
-      "Mirai.Net/2.4.2": {
+      "Mirai.Net/2.4.4": {
         "type": "package",
         "dependencies": {
           "Flurl": "3.0.6",
@@ -55,10 +55,10 @@
           "Websocket.Client": "4.4.43"
         },
         "compile": {
-          "lib/net6.0/Mirai.Net.dll": {}
+          "lib/netstandard2.0/Mirai.Net.dll": {}
         },
         "runtime": {
-          "lib/net6.0/Mirai.Net.dll": {}
+          "lib/netstandard2.0/Mirai.Net.dll": {}
         }
       },
       "MySqlConnector/2.1.9": {
@@ -77,6 +77,57 @@
         },
         "runtime": {
           "lib/net6.0/Newtonsoft.Json.dll": {}
+        }
+      },
+      "SkiaSharp/2.88.1-preview.91": {
+        "type": "package",
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.1-preview.91",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1-preview.91"
+        },
+        "compile": {
+          "lib/net6.0/SkiaSharp.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {}
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.1-preview.91": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "assetType": "native",
+            "rid": "osx"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.1-preview.91": {
+        "type": "package",
+        "compile": {
+          "lib/net5.0/_._": {}
+        },
+        "runtime": {
+          "lib/net5.0/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-arm64"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          }
         }
       },
       "Spectre.Console/0.44.1-preview.0.17": {
@@ -155,7 +206,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "AlisaDependency": "1.0.0",
-          "Mirai.Net": "2.4.2",
+          "Mirai.Net": "2.4.4",
           "MySqlConnector": "2.1.9",
           "Newtonsoft.Json": "13.0.2-beta1",
           "Spectre.Console": "0.44.1-preview.0.17"
@@ -171,8 +222,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "Mirai.Net": "2.4.2",
+          "Mirai.Net": "2.4.4",
           "MySqlConnector": "2.1.9",
+          "SkiaSharp": "2.88.1-preview.91",
           "Spectre.Console": "0.44.1-preview.0.17"
         },
         "compile": {
@@ -253,18 +305,16 @@
         "version.txt"
       ]
     },
-    "Mirai.Net/2.4.2": {
-      "sha512": "B1uqC7DY/Jv1/a3KDfhAhcFDRjGh3l3/cSayOhyQfiap/eHR7penl4WqyKjk8jD3Tk76ZUjfE3td8JOE05vLVA==",
+    "Mirai.Net/2.4.4": {
+      "sha512": "AvL+H4hdoBabq7etPPxmoiQ50bKrSMf2uuLSpVd+kZSsMDsvheRG2EV3qY1HCAL7cTrA4vltJdDXSoMAaPtBDQ==",
       "type": "package",
-      "path": "mirai.net/2.4.2",
+      "path": "mirai.net/2.4.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/net6.0/Mirai.Net.dll",
-        "lib/net6.0/Mirai.Net.xml",
         "lib/netstandard2.0/Mirai.Net.dll",
         "lib/netstandard2.0/Mirai.Net.xml",
-        "mirai.net.2.4.2.nupkg.sha512",
+        "mirai.net.2.4.4.nupkg.sha512",
         "mirai.net.nuspec"
       ]
     },
@@ -325,6 +375,131 @@
         "newtonsoft.json.13.0.2-beta1.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "packageIcon.png"
+      ]
+    },
+    "SkiaSharp/2.88.1-preview.91": {
+      "sha512": "jrmq8hxzWLrIkMuSLxvlaagDzh4yMOeyR0UfaiQ8uq0qXzrNL/NXeFNkpM/OoEb3+mgNHnRVgW7ozCUPnO+uFw==",
+      "type": "package",
+      "path": "skiasharp/2.88.1-preview.91",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "interactive-extensions/dotnet/SkiaSharp.DotNet.Interactive.dll",
+        "lib/monoandroid1.0/SkiaSharp.dll",
+        "lib/monoandroid1.0/SkiaSharp.pdb",
+        "lib/monoandroid1.0/SkiaSharp.xml",
+        "lib/net462/SkiaSharp.dll",
+        "lib/net462/SkiaSharp.pdb",
+        "lib/net462/SkiaSharp.xml",
+        "lib/net5.0/SkiaSharp.dll",
+        "lib/net5.0/SkiaSharp.pdb",
+        "lib/net5.0/SkiaSharp.xml",
+        "lib/net6.0-android30.0/SkiaSharp.dll",
+        "lib/net6.0-android30.0/SkiaSharp.pdb",
+        "lib/net6.0-android30.0/SkiaSharp.xml",
+        "lib/net6.0-ios13.6/SkiaSharp.dll",
+        "lib/net6.0-ios13.6/SkiaSharp.pdb",
+        "lib/net6.0-ios13.6/SkiaSharp.xml",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.dll",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.pdb",
+        "lib/net6.0-maccatalyst13.5/SkiaSharp.xml",
+        "lib/net6.0-macos10.15/SkiaSharp.dll",
+        "lib/net6.0-macos10.15/SkiaSharp.pdb",
+        "lib/net6.0-macos10.15/SkiaSharp.xml",
+        "lib/net6.0-tizen7.0/SkiaSharp.dll",
+        "lib/net6.0-tizen7.0/SkiaSharp.pdb",
+        "lib/net6.0-tizen7.0/SkiaSharp.xml",
+        "lib/net6.0-tvos13.4/SkiaSharp.dll",
+        "lib/net6.0-tvos13.4/SkiaSharp.pdb",
+        "lib/net6.0-tvos13.4/SkiaSharp.xml",
+        "lib/net6.0/SkiaSharp.dll",
+        "lib/net6.0/SkiaSharp.pdb",
+        "lib/net6.0/SkiaSharp.xml",
+        "lib/netcoreapp3.1/SkiaSharp.dll",
+        "lib/netcoreapp3.1/SkiaSharp.pdb",
+        "lib/netcoreapp3.1/SkiaSharp.xml",
+        "lib/netstandard1.3/SkiaSharp.dll",
+        "lib/netstandard1.3/SkiaSharp.pdb",
+        "lib/netstandard1.3/SkiaSharp.xml",
+        "lib/netstandard2.0/SkiaSharp.dll",
+        "lib/netstandard2.0/SkiaSharp.pdb",
+        "lib/netstandard2.0/SkiaSharp.xml",
+        "lib/netstandard2.1/SkiaSharp.dll",
+        "lib/netstandard2.1/SkiaSharp.pdb",
+        "lib/netstandard2.1/SkiaSharp.xml",
+        "lib/tizen40/SkiaSharp.dll",
+        "lib/tizen40/SkiaSharp.pdb",
+        "lib/tizen40/SkiaSharp.xml",
+        "lib/uap10.0.10240/SkiaSharp.dll",
+        "lib/uap10.0.10240/SkiaSharp.pdb",
+        "lib/uap10.0.10240/SkiaSharp.xml",
+        "lib/uap10.0.16299/SkiaSharp.dll",
+        "lib/uap10.0.16299/SkiaSharp.pdb",
+        "lib/uap10.0.16299/SkiaSharp.xml",
+        "lib/xamarinios1.0/SkiaSharp.dll",
+        "lib/xamarinios1.0/SkiaSharp.pdb",
+        "lib/xamarinios1.0/SkiaSharp.xml",
+        "lib/xamarinmac2.0/SkiaSharp.dll",
+        "lib/xamarinmac2.0/SkiaSharp.pdb",
+        "lib/xamarinmac2.0/SkiaSharp.xml",
+        "lib/xamarintvos1.0/SkiaSharp.dll",
+        "lib/xamarintvos1.0/SkiaSharp.pdb",
+        "lib/xamarintvos1.0/SkiaSharp.xml",
+        "lib/xamarinwatchos1.0/SkiaSharp.dll",
+        "lib/xamarinwatchos1.0/SkiaSharp.pdb",
+        "lib/xamarinwatchos1.0/SkiaSharp.xml",
+        "skiasharp.2.88.1-preview.91.nupkg.sha512",
+        "skiasharp.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.1-preview.91": {
+      "sha512": "8flfBRk//P0crtAHvHG6tACtzvFj67fIITPgOqWcxbKxMgoxkafi+DwPVwzUK9NVWBdEo09J1H2PIbYX4berVQ==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.macos/2.88.1-preview.91",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "build/net6.0-macos10.15/SkiaSharp.NativeAssets.macOS.targets",
+        "build/xamarinmac2.0/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/net6.0-macos10.15/SkiaSharp.NativeAssets.macOS.targets",
+        "buildTransitive/xamarinmac2.0/SkiaSharp.NativeAssets.macOS.targets",
+        "lib/net462/_._",
+        "lib/net5.0/_._",
+        "lib/net6.0-macos10.15/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "lib/xamarinmac2.0/_._",
+        "runtimes/osx/native/libSkiaSharp.dylib",
+        "skiasharp.nativeassets.macos.2.88.1-preview.91.nupkg.sha512",
+        "skiasharp.nativeassets.macos.nuspec"
+      ]
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.1-preview.91": {
+      "sha512": "ElIeikrt/zVVawIN/KZWXagWT+u/t7RHVH3XTBDeGY7Dmllmv2s8JfSlrX+oP9kGdo0HJze/N3jou7iLS0ymIw==",
+      "type": "package",
+      "path": "skiasharp.nativeassets.win32/2.88.1-preview.91",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "buildTransitive/net462/SkiaSharp.NativeAssets.Win32.targets",
+        "lib/net462/_._",
+        "lib/net5.0/_._",
+        "lib/netcoreapp3.1/_._",
+        "lib/netstandard1.3/_._",
+        "runtimes/win-arm64/native/libSkiaSharp.dll",
+        "runtimes/win-x64/native/libSkiaSharp.dll",
+        "runtimes/win-x86/native/libSkiaSharp.dll",
+        "skiasharp.nativeassets.win32.2.88.1-preview.91.nupkg.sha512",
+        "skiasharp.nativeassets.win32.nuspec"
       ]
     },
     "Spectre.Console/0.44.1-preview.0.17": {
@@ -486,7 +661,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "AlisaBot >= 1.0.0",
-      "Mirai.Net >= 2.4.2",
+      "Mirai.Net >= 2.4.4",
       "MySqlConnector >= 2.1.9",
       "Spectre.Console >= 0.44.1-preview.0.17"
     ]
@@ -542,7 +717,7 @@
         "dependencies": {
           "Mirai.Net": {
             "target": "Package",
-            "version": "[2.4.2, )"
+            "version": "[2.4.4, )"
           },
           "MySqlConnector": {
             "target": "Package",

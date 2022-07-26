@@ -10,5 +10,6 @@ public class SvRoomInfo
     {
         this.whatServer = whatServer;
         this.roomNum = roomNum;
+        this.createTime=DateTime.Now;
     }
 }

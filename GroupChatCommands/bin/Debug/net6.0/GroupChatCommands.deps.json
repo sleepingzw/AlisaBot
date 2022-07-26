@@ -9,7 +9,7 @@
       "GroupChatCommands/1.0.0": {
         "dependencies": {
           "AlisaBot": "1.0.0",
-          "Mirai.Net": "2.4.2",
+          "Mirai.Net": "2.4.4",
           "MySqlConnector": "2.1.9",
           "Spectre.Console": "0.44.1-preview.0.17",
           "SlpzLibrary": "1.0.0.0",
@@ -52,7 +52,7 @@
         }
       },
       "Microsoft.NETCore.Platforms/2.1.2": {},
-      "Mirai.Net/2.4.2": {
+      "Mirai.Net/2.4.4": {
         "dependencies": {
           "Flurl": "3.0.6",
           "Flurl.Http": "3.2.4",
@@ -60,7 +60,7 @@
           "Websocket.Client": "4.4.43"
         },
         "runtime": {
-          "lib/net6.0/Mirai.Net.dll": {
+          "lib/netstandard2.0/Mirai.Net.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -79,6 +79,46 @@
           "lib/net6.0/Newtonsoft.Json.dll": {
             "assemblyVersion": "13.0.0.0",
             "fileVersion": "13.0.2.26916"
+          }
+        }
+      },
+      "SkiaSharp/2.88.1-preview.91": {
+        "dependencies": {
+          "SkiaSharp.NativeAssets.Win32": "2.88.1-preview.91",
+          "SkiaSharp.NativeAssets.macOS": "2.88.1-preview.91"
+        },
+        "runtime": {
+          "lib/net6.0/SkiaSharp.dll": {
+            "assemblyVersion": "2.88.0.0",
+            "fileVersion": "2.88.1.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.macOS/2.88.1-preview.91": {
+        "runtimeTargets": {
+          "runtimes/osx/native/libSkiaSharp.dylib": {
+            "rid": "osx",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          }
+        }
+      },
+      "SkiaSharp.NativeAssets.Win32/2.88.1-preview.91": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/libSkiaSharp.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/libSkiaSharp.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x86/native/libSkiaSharp.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
           }
         }
       },
@@ -114,7 +154,7 @@
       "AlisaBot/1.0.0": {
         "dependencies": {
           "AlisaDependency": "1.0.0",
-          "Mirai.Net": "2.4.2",
+          "Mirai.Net": "2.4.4",
           "MySqlConnector": "2.1.9",
           "Newtonsoft.Json": "13.0.2-beta1",
           "Spectre.Console": "0.44.1-preview.0.17"
@@ -125,8 +165,9 @@
       },
       "AlisaDependency/1.0.0": {
         "dependencies": {
-          "Mirai.Net": "2.4.2",
+          "Mirai.Net": "2.4.4",
           "MySqlConnector": "2.1.9",
+          "SkiaSharp": "2.88.1-preview.91",
           "Spectre.Console": "0.44.1-preview.0.17"
         },
         "runtime": {
@@ -185,12 +226,12 @@
       "path": "microsoft.netcore.platforms/2.1.2",
       "hashPath": "microsoft.netcore.platforms.2.1.2.nupkg.sha512"
     },
-    "Mirai.Net/2.4.2": {
+    "Mirai.Net/2.4.4": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-B1uqC7DY/Jv1/a3KDfhAhcFDRjGh3l3/cSayOhyQfiap/eHR7penl4WqyKjk8jD3Tk76ZUjfE3td8JOE05vLVA==",
-      "path": "mirai.net/2.4.2",
-      "hashPath": "mirai.net.2.4.2.nupkg.sha512"
+      "sha512": "sha512-AvL+H4hdoBabq7etPPxmoiQ50bKrSMf2uuLSpVd+kZSsMDsvheRG2EV3qY1HCAL7cTrA4vltJdDXSoMAaPtBDQ==",
+      "path": "mirai.net/2.4.4",
+      "hashPath": "mirai.net.2.4.4.nupkg.sha512"
     },
     "MySqlConnector/2.1.9": {
       "type": "package",
@@ -205,6 +246,27 @@
       "sha512": "sha512-lrHT3bmqM13QHvgtj2Y30BCRsq6lX07klW5tScx2B7ihqWeG6aVXrHxVALN34+boed9ybVtlRFLOuKD44Xuttg==",
       "path": "newtonsoft.json/13.0.2-beta1",
       "hashPath": "newtonsoft.json.13.0.2-beta1.nupkg.sha512"
+    },
+    "SkiaSharp/2.88.1-preview.91": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-jrmq8hxzWLrIkMuSLxvlaagDzh4yMOeyR0UfaiQ8uq0qXzrNL/NXeFNkpM/OoEb3+mgNHnRVgW7ozCUPnO+uFw==",
+      "path": "skiasharp/2.88.1-preview.91",
+      "hashPath": "skiasharp.2.88.1-preview.91.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.macOS/2.88.1-preview.91": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8flfBRk//P0crtAHvHG6tACtzvFj67fIITPgOqWcxbKxMgoxkafi+DwPVwzUK9NVWBdEo09J1H2PIbYX4berVQ==",
+      "path": "skiasharp.nativeassets.macos/2.88.1-preview.91",
+      "hashPath": "skiasharp.nativeassets.macos.2.88.1-preview.91.nupkg.sha512"
+    },
+    "SkiaSharp.NativeAssets.Win32/2.88.1-preview.91": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ElIeikrt/zVVawIN/KZWXagWT+u/t7RHVH3XTBDeGY7Dmllmv2s8JfSlrX+oP9kGdo0HJze/N3jou7iLS0ymIw==",
+      "path": "skiasharp.nativeassets.win32/2.88.1-preview.91",
+      "hashPath": "skiasharp.nativeassets.win32.2.88.1-preview.91.nupkg.sha512"
     },
     "Spectre.Console/0.44.1-preview.0.17": {
       "type": "package",

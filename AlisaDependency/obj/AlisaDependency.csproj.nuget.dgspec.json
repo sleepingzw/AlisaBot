@@ -47,11 +47,15 @@
           "dependencies": {
             "Mirai.Net": {
               "target": "Package",
-              "version": "[2.4.2, )"
+              "version": "[2.4.4, )"
             },
             "MySqlConnector": {
               "target": "Package",
               "version": "[2.1.9, )"
+            },
+            "SkiaSharp": {
+              "target": "Package",
+              "version": "[2.88.1-preview.91, )"
             },
             "Spectre.Console": {
               "target": "Package",
