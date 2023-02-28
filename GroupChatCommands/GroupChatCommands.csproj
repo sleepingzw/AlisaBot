@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mirai.Net" Version="2.4.4" />
+    <PackageReference Include="MySqlConnector" Version="2.1.9" />
+    <PackageReference Include="Spectre.Console" Version="0.44.1-preview.0.17" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AlisaBot\AlisaBot.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="SlpzLibrary">
+      <HintPath>..\..\..\MyDLL\SlpzLibrary.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
