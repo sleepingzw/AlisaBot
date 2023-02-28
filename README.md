@@ -3,7 +3,7 @@ My ShadowVerse QQ chat bot
 
 个人用的影之诗qq机器人
 
-~~已经寄了
+~~已经寄了~~
 
 基于 
 [Mirai](https://github.com/mamoe/mirai), 
